@@ -1,0 +1,23 @@
+.search-course-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.sidebar {
+  order: 1;
+}
+
+.program-list {
+  order: 2;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .sidebar {
+    order: initial;
+  }
+
+  .program-list {
+    width: 75%;
+  }
+}

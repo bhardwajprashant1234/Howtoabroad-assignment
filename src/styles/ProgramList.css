@@ -1,0 +1,50 @@
+.program-list {
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.program-list h2 {
+  margin-top: 0;
+}
+
+.program-list ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.program-list li {
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color: #f5f5f5;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+@media (min-width: 768px) {
+  .program-list li {
+    width: calc(50% - 20px);
+    margin-right: 20px;
+  }
+
+  .program-list li:nth-child(2n) {
+    margin-right: 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  .program-list li {
+    width: calc(33.33% - 20px);
+  }
+
+  .program-list li:nth-child(2n) {
+    margin-right: 20px;
+  }
+
+  .program-list li:nth-child(3n) {
+    margin-right: 0;
+  }
+}
